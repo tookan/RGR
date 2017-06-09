@@ -5,11 +5,22 @@ class  zakazBD{
     public function __construct()
     {
         podkluchenie::connect();
-        $bd=podkluchenie::$podkl;
+        $this->bd=podkluchenie::$podkl;
     }
-    public function poiskZakazov($name){
-        $req="SELECT orders, status WHERE orders=$name";
+    public function poiskZakazov(){
+        $req="SELECT orders FROM zakaz";
+  
         $res=$this->bd->query($req);
+        $i=0;
+        while ($data= $res->fetch_assoc()){
+            $zakaz[$i]=$data['orders'];
+            $i++;
+        }
+        
+        $zakaz=json_encode($zakaz,JSON_UNESCAPED_UNICODE);
+return $zakaz;
+        var_dump($zakaz);
+        
     }
 
 

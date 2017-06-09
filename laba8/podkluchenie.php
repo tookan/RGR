@@ -10,9 +10,11 @@ class podkluchenie {
         return self::$instance;
     }
     protected function __construct() {
-        include_once 'pas.php';
-        self::$podkl = new mysqli($host,$user,$password,$user);
-        if(mysqli_connect_errno(self::$podkl)) echo 'Achtung!';
+        self::$podkl = new mysqli('mpanovam.ho.ua','mpanovam','16253444','mpanovam');
+        if (mysqli_connect_errno(self::$podkl)) {
+            echo "Не удалось подключиться к MySQL: " . mysqli_connect_error();
+            exit();
+        }
     }
     private function __clone() {
 
