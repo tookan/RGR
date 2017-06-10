@@ -1,7 +1,26 @@
 
 $(document).ready(function () {
-    $.get('scripts/autocompletedata.php',function (orders) {
-        alert(orders);
-    })
+    $.ajax({
+url: 'scripts/autocompletedata.php',
+        dataType: 'json',
+        contentType: 'application/json',
+        json: true
+    }).done(function (orders) {
+        var orderlist = orders;
+        autocomplete(orderlist);
+    });
 
-})
+    function autocomplete(orders) {
+        var orderlist = orders;
+        $("#srch").autocomplete({
+            source: orderlist,
+            messages: {
+                noResults: '',
+                results: function() {}
+            }
+        });
+    }
+
+
+});
+

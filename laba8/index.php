@@ -7,7 +7,5 @@ include 'main.html';
 include_once 'podkluchenie.php';
 include_once 'zakazBD.php';
 
-$var=new zakazBD();
-$var->poiskZakazov();
 
-require 'scripts/autocompletedata.php';
+

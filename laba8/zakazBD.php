@@ -1,4 +1,5 @@
 <?php
+require_once 'podkluchenie.php';
 
 class  zakazBD{
     public $bd;
@@ -17,11 +18,8 @@ class  zakazBD{
             $i++;
         }
         
-        $zakaz=json_encode($zakaz,JSON_UNESCAPED_UNICODE);
+       // $zakaz=json_encode($zakaz,JSON_UNESCAPED_UNICODE);
 return $zakaz;
-        var_dump($zakaz);
-        
     }
-
-
+    
 }
