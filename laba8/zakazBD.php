@@ -8,18 +8,25 @@ class  zakazBD{
         podkluchenie::connect();
         $this->bd=podkluchenie::$podkl;
     }
-    public function poiskZakazov(){
-        $req="SELECT orders FROM zakaz";
-  
+    public function poiskZakazov($orders){
+        $req="SELECT DISTINCT orders FROM zakaz WHERE orders LIKE '%".$orders."%' ";
         $res=$this->bd->query($req);
         $i=0;
         while ($data= $res->fetch_assoc()){
             $zakaz[$i]=$data['orders'];
             $i++;
         }
-        
-       // $zakaz=json_encode($zakaz,JSON_UNESCAPED_UNICODE);
 return $zakaz;
     }
+    public function  vyvodZakazov($orders){
+    $req= "SELECT * FROM zakaz WHERE orders LIKE '$orders'  ";
+        $res=$this->bd->query($req);
+        $i=0;
+        while ($data= $res->fetch_object()){
+            $zakaz[$i]=$data;
+            $i++;
+        }
+        return $zakaz;
+}
     
 }
