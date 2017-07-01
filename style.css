@@ -1,0 +1,77 @@
+@font-face {
+    font-family: headers;
+    src: url(img/10592.ttf)
+}
+.navbar-header.navbar-fixed-top.mod {
+    width: 100%;
+}
+
+.container-fluid.mod {
+    background-color: #e5e0cc;
+}
+img.head-logo {
+    width: 60px;
+    height: 60px;
+}
+.container{
+    width: 100%;
+    position: relative;
+}
+.container.about{
+    height: 600px;
+    background-color: #e2a67f;
+    margin-top: 60px;
+}
+.container.prods{
+    height: 700px;
+    background-color: #e0af8f;
+
+}
+.container.contacts{
+    height: 200px;
+    background-color: #ed945a;
+
+}
+.container.register{
+    background-color: #c0cde0;
+    margin-top: 60px;
+}
+div.col-md-4.imag-main{
+    margin-top: 10%;
+}
+img.imag-main{
+    width: 100%;
+    height: auto;
+}
+h3,h4{
+    text-align: center;
+    font-family: 'Abril Fatface', bold;
+}
+p.content{
+    text-align: justify;
+    font-family: 'Roboto Slab', serif;
+}
+.upbtn{
+    position: fixed; bottom: 5px; right: 5px;
+    z-index: 1;
+}
+.logins{
+    position: absolute;
+    right: 10px;
+    margin-top: 5px;
+}
+div.col-md-8.register{
+    margin-top: 10px;
+}
+.form-control.control-label{
+    text-align: left;
+}
+div#passes.col-md-3{
+    position: absolute;
+    z-index: 1;
+    margin-top: 50px;
+    display: inline-block;
+overflow: hidden;
+    float: left;
+    background-color: darkseagreen;
+}
