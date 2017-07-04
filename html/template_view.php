@@ -9,6 +9,11 @@
         <ul class="nav navbar-nav">
             <li ><a href="register.php">Регистрация</a> </li>
         </ul>
+        <ul class="nav navbar-nav">
+            <li ><a href="search.php">Поиск пользователей</a> </li>
+            <li ><a href="clearcookie.php">Очистить куки</a> </li>
+        </ul>
+
         <?php
         include "login_script.php";
         ?>

@@ -14,6 +14,9 @@
             <li ><a id="gotoProds">Продукция</a></li>
             <li ><a id="gotoConts">Контакты</a> </li>
             <li ><a href="register.php">Регистрация</a> </li>
+            <li ><a href="search.php">Поиск пользователей</a> </li>
+            <li ><a href="clearcookie.php">Очистить куки</a> </li>
+
         </ul>
         <?php include 'login_script.php' ?> 
 </nav>

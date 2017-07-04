@@ -1,9 +1,11 @@
-<form action="javascript:void(0)" class="form-inline logins" >
+<div class="container search-log">
+<div  class="col-md-8 search-log">
+<form action="javascript:void(0)" class="form-inline search-log" >
     <div class="form-group">
         <label for="search"> Логин:</label>
         <input id='search' class="form-control" name='search'>
     </div>
-    <button type="submit" class="btn btn-default"> Искать</button>
 </form>
-<div class="search-target"></div>
-
+<div id="search-target"></div>
+</div>
+</div>

@@ -16,32 +16,41 @@ img.head-logo {
 .container{
     width: 100%;
     position: relative;
+    border-bottom: dotted;
+    border-width: 1px;
 }
-.container.about{
+.container.about, .container.search-log{
     height: 600px;
-    background-color: #e2a67f;
+    background: rgba(226, 218, 124,0.55);
     margin-top: 60px;
 }
 .container.prods{
     height: 700px;
-    background-color: #e0af8f;
+    background: rgba(209, 136, 64,0.55);
 
 }
 .container.contacts{
     height: 200px;
     background-color: #ed945a;
-
 }
 .container.register{
     background-color: #c0cde0;
     margin-top: 60px;
 }
+.container.logins{
+    height: 200px;
+    background-color: #ed945a;
+}
+
 div.col-md-4.imag-main{
     margin-top: 10%;
 }
 img.imag-main{
     width: 100%;
     height: auto;
+    border-left: dashed;
+    border-right: dashed;
+    border-width: 1px;
 }
 h3,h4{
     text-align: center;
@@ -55,11 +64,12 @@ p.content{
     position: fixed; bottom: 5px; right: 5px;
     z-index: 1;
 }
-.logins{
+.logins,.logined{
     position: absolute;
     right: 10px;
     margin-top: 5px;
 }
+
 div.col-md-8.register{
     margin-top: 10px;
 }
@@ -74,4 +84,19 @@ div#passes.col-md-3{
 overflow: hidden;
     float: left;
     background-color: darkseagreen;
+}
+div.col-md-8.search-log{
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 150px;
+}
+ul.sear-res{
+    list-style-type: none;
+    width: 250px;
+}
+li.sear-res{
+    border-width: 1px;
+    border-style: dotted;
+    border-color: crimson;
+    background-color: #ffffff;
 }

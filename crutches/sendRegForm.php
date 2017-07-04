@@ -7,7 +7,7 @@ $user->tel= $_POST['tel'];
 $user->email= $_POST['email'];
 $user->pwd= $_POST['pwd'];
 $user->last= $_POST['last'];
-$user->middle= $_POST['first'];
+$user->middle= $_POST['middle'];
 $user->first= $_POST['first'];
 $user->save();
 echo 'created!';
